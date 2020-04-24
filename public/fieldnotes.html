@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tierra Narrative</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body >
+    <!--NAVIGATION-->
+    <nav  class="h-16 bg-white sticky top-0 flex flex-row shadow-xl  rounded">
+      <div class="flex flex-row w-full">
+        <div class="flex flex-row items-center font-bold w-full justify-center md:justify-start md:ml-4">
+              <a href="index.html"><img src="img/TNlogo.PNG" class="h-12 w-14 lg:hidden" alt=""></a>
+              <a href="index.html" class="h-12 w-auto hidden lg:flex"><h1 class="font-bold text-xl self-center">TIERRA NARRATIVE</h1></a>
+        </div>
+        <div class="flex flex-row absolute right-0 mt-4 mr-4 items-center justify-end">
+          <button type="button" class="lg:hidden block text-black hover:text-gray-500" onclick="menu()" >
+            <svg class="h-8 w-8 fill-current" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+            </svg>
+          </button>
+          <ul class="hidden lg:flex flex-row"></ul>
+        </div>
+      </div>
+      <div id="hiddenMenuDiv" style="display: none;">
+          <div class="origin-bottom-right absolute right-0 mt-20 w-2/3 mr-4 shadow-xl rounded-md">
+              <div class=" bg-white shadow-xs">
+                  <div class="rounded">
+                        <a href="fieldnotes.html" class="font-medium h-12 block p-4 text-lg leading-5 text-black hover:bg-gray-200 text-right border-b border-solid border-gray-200">FIELD NOTES</a>
+                        <a href="members.html" class="font-medium h-12 block p-4 text-lg  leading-5 text-black hover:bg-gray-200 text-right rounded-md border-b border-solid border-gray-200">TEAM</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </nav>
+    <!--CONTENT-->
+    <div id="home" class="h-auto flex flex-col mb-10 font-mono">
+    <div class="h-auto flex flex-col justify-center ">
+        <h1 class="text-4xl lg:text-6xl font-bold mt-10 p-2 text-left w-5/6 md:w-1/2 self-center ">FIELD NOTES</h1>
+        <div class=" p-2 w-full flex justify-center lg:mt-10">
+            <div class="w-5/6  md:w-1/2  flex self-center lg:text-2xl">
+              <br>
+              <p>
+                Tierra Narrative is a Central American production house creating spaces for transnational conversations and collaborations between the Central American diaspora and the homelands. 
+                  <br>
+                  <br>
+                  TN has programmed film screenings, curated poetry readings, and hosted conversations with the Hemispheric Institute of Performance & Politics, Open Society Foundations, Allied Media Conference, The People’s Forum, and Xamanil Kaqchikel Jay–– addressing subjects such as migration, displacement, indigeneity, activism, and our relationship to other diasporic populations. This plurality aims toward collective authorship while raising the visibility of Central Americans across geographies.<br><br>
+                  Group exhibitions include Moving Walls 25: Another Way Home and Conexiones. As Open Society Fellows alongside Family Reunion Project, TN brought virtual reality installations to migrant communities throughout New York. 
+              </p>
+              <br>
+            </div>
+        </div>
+    </div>
+    </div> 
+  <script src='static/app.js'></script>
+  </body>
+</html>
