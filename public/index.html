@@ -10,21 +10,10 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
   <body class="bg-white h-auto top-0 bottom-0 flex flex-col overflow-auto font-mono">
-        <!-- LANDING  
-          <header id="banner" class="bg-black h-auto " >
-            <div class=" w-100% border-solid border-red-200 border-4 m-6 h-full">
-              <div class=" h-full w-100% m-6">
-                <h1 class="font-bold text-white text-4xl md:text-6xl p-2 ">UPCOMING EVENTS</h1>
-                <div id="upcomingevents">
-                </div>
-              </div>
-            </div>
-          </header> -->
-        <!-- MAIN PAGE -->
         <!--NAVIGATION-->
           <nav  class="h-16 bg-white sticky top-0 flex flex-row">
           <div class="flex flex-row w-full">
-            <div class="ml-8 flex flex-row items-center font-bold w-full justify-start">
+            <div class="ml-8 flex flex-row items-left font-bold w-full justify-start">
                   <a href="index.html" class="h-12 w-auto hidden lg:flex"><h1 class="font-bold text-xl self-center">TIERRA NARRATIVE</h1></a>
             </div>
             <div class="flex flex-row absolute right-0 mt-2 lg:mt-4 mr-8 items-center justify-end">
@@ -41,10 +30,10 @@
               <div class="origin-bottom-right absolute right-0 mt-16 w-full  shadow-xl rounded-md block lg:hidden">
                   <div class="h-4 bg-black w-full"></div>
                   <div class=" bg-white shadow-xs">
-                      <div class="rounded">
-                            <a href="index.html" class="font-medium h-12 block p-4 text-lg leading-5 text-black hover:bg-gray-200 text-center border-b border-solid border-gray-200">HOME</a>
-                            <a href="fieldnotes.html" class="font-medium h-12 block p-4 text-lg  leading-5 text-black hover:bg-gray-200 text-center rounded-md border-b border-solid border-gray-200">FIELD NOTES</a>
-                            <a href="members.html" class="font-medium h-12 block p-4 text-lg  leading-5 text-black hover:bg-gray-200 text-center rounded-md border-b border-solid border-gray-200">TEAM</a>
+                      <div class="rounded text-left font-medium text-lg">
+                            <a href="index.html" class="h-12 block p-4 pl-6 leading-5 text-black hover:bg-gray-200 border-b border-solid border-gray-200">HOME</a>
+                            <a href="fieldnotes.html" class="h-12 block p-4 pl-6 leading-5 text-black hover:bg-gray-200 rounded-md border-b border-solid border-gray-200">FIELD NOTES</a>
+                            <a href="members.html" class="h-12 block p-4 pl-6 leading-5 text-black hover:bg-gray-200 rounded-md border-b border-solid border-gray-200">TEAM</a>
                       </div>
                   </div>
               </div>
@@ -72,10 +61,17 @@
                   </div>
               <!--Calendar-->
                 <div class="md:hidden overflow-x-auto h-screen py-20 w-auto flex flex-nowrap flex-row space-x-24 ">
+                  
+                  
+                    <div id="spacer" class="invisible h-full flex flex-col w-1/6 flex-shrink-0 border border-black">
+                      <div id="eventheader" class="h-1/2 border-b border-black bg-white overflow-auto">
+                          <img class="object-cover w-full h-full bg-green-300" src="/img/TNlogo.png" alt="">  
+                      </div>
+                    </div>
                   <!--EVENTS-->
-                    <div id="event1" class="h-full flex flex-col w-11/12 flex-shrink-0 border border-black ml-4">
+                    <div id="event1" class="h-full flex flex-col w-11/12 flex-shrink-0 border border-black">
                           <div id="eventheader" class="h-1/2 border-b border-black bg-gray-200">
-                              <img class="object-cover w-full h-full bg-green-300" src="/img/TNlogo.png" alt="">
+                              <img class="object-cover w-full h-full bg-green-300" src="/img/TNI.png" alt="">
                           </div>
                           <div id="minitext" class="h-3/4 bg-white overflow-auto">
                             <div class="px-4 py-4 ">
@@ -91,7 +87,7 @@
                     <div id="event2" class="h-full flex flex-col w-11/12 flex-shrink-0 border border-black">
                       <div id="eventheader" class="h-1/2 border-b border-black bg-white overflow-auto">
                        
-                          <img class="object-cover w-full h-full bg-green-300" src="/img/TNlogo.png" alt="">
+                          <img class="object-cover w-full h-full bg-green-300" src="/img/TNCINEMA.png" alt="">
                         
                       </div>
                       <div id="minitext" class="h-3/4 border-t border-black bg-white overflow-auto">
@@ -106,7 +102,7 @@
                     <div id="event3" class="h-full flex flex-col w-11/12 flex-shrink-0 border border-black">
                       <div id="eventheader" class="h-1/2 border-b border-black bg-white overflow-auto">
                        
-                          <img class="object-cover w-full h-full bg-green-300" src="/img/TNlogo.png" alt="">
+                          <img class="object-cover w-full h-full bg-green-300" src="/img/TNC.png" alt="">
                         
                       </div>
                       <div id="minitext" class="h-3/4 border-t border-black bg-white overflow-auto">
@@ -124,7 +120,6 @@
                       <div id="eventheader" class="h-1/2 border-b border-black bg-white overflow-auto">
                           <img class="object-cover w-full h-full bg-green-300" src="/img/TNlogo.png" alt="">  
                       </div>
-                      
                     </div>
 
                 </div>
@@ -149,9 +144,9 @@
                   <!--End mc_embed_signup-->
                 </div>
                 <!--From Field Notes-->
-                <div id="fn" class="md:hidden overflow-x-auto h-96 w-auto py-8 flex flex-nowrap flex-row space-x-24">
+                <a href="/fieldnotes.html"><div id="fn" class="md:hidden overflow-x-auto h-96 w-auto py-8 flex flex-nowrap flex-row space-x-24">
 
-                </div>
+                </div></a>
 
           </div>
         <!-- FOOTER-->
@@ -163,7 +158,6 @@
                 <a href="https://twitter.com/tierranarrative" target="_BLANK"><img src="img/tw.png" class="h-4 w-4 ml-4" alt=""></a>
               </div>
             </div>
-            <div class="w-100% h-10"><p class="text-white text-center text-sm">Powered by <a href="" class="text-blue-400">Frijoles</a></p></div>
           </footer>
           <script src='static/app.js'></script>
       </body>
