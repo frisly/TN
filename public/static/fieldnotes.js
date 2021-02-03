@@ -123,4 +123,34 @@ document.getElementById("blog").innerHTML = `
       </div>
 </div>
 
+<div id="p4" class="w-5/6  md:w-1/2 flex-col ${post4visibility} self-center mb-10">
+    <!--POSTTITLE-->
+      <h1 class="font-bold text-xl lg:text-2xl mb-4 uppercase text-left leading-tight">${post4title}</h1>
+    <!--POSTIMAGE/VIDEO-->
+      <div class="w-11/12 mb-6 self-center">${post4embbed}</div>
+    <!--POST DESCRIPTION-->
+      <div class="h-auto mb-4 self-center">
+        <p class="text-sm lg:text-base">${post4description}</p>
+      </div>
+    <!--POST LINK-->
+      <div class="h-auto flex flex-row mb-4 justify-end">
+        <a href="${post4link}" class="h-auto mb-4 text-sm hover:text-blue-500">${post4linktext}</a>
+      </div>
+</div>
+
+<div id="p4" class="w-5/6  md:w-1/2 flex-col ${post4visibility} self-center mb-10">
+    <!--POSTTITLE-->
+      <h1 class="font-bold text-xl lg:text-2xl mb-4 uppercase text-left leading-tight">${post4title}</h1>
+    <!--POSTIMAGE/VIDEO-->
+      <div class="w-11/12 mb-6 self-center">${post4embbed}</div>
+    <!--POST DESCRIPTION-->
+      <div class="h-auto mb-4 self-center">
+        <p class="text-sm lg:text-base">${post4description}</p>
+      </div>
+    <!--POST LINK-->
+      <div class="h-auto flex flex-row mb-4 justify-end">
+        <a href="${post4link}" class="h-auto mb-4 text-sm hover:text-blue-500">${post4linktext}</a>
+      </div>
+</div>
+
 `
